@@ -1,6 +1,3 @@
-// options.toLowerCase
-// options.protocol
-
 module.exports = function(baseUrl, options) {
   // determine what was provided
   let constructedUrl;
