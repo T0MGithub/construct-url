@@ -90,7 +90,7 @@ module.exports = function(baseUrl, options) {
 
     // construct query parameters
     let queryOptions = options.queryParams;
-    if (queryOptions !== undefined) {
+    if (queryOptions !== undefined || typeof(queryOptions) === 'object') {
       let listOfQueries = new Array();
       // get all keys from object
       let allKeys = Object.keys(queryOptions);
