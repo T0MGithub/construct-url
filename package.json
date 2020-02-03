@@ -1,6 +1,6 @@
 {
   "name": "construct-url",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A lightweight library to construct URLs including query parameters, path, protocol, domain and hash.",
   "main": "index.js",
   "scripts": {
