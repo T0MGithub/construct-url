@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/t0mgithub/construct-url.git"
+    "url": "git+https://github.com/TomPrograms/construct-url.git"
   },
   "keywords": [
     "url",
@@ -35,7 +35,7 @@
   ],
   "author": "Tom",
   "license": "MIT",
-  "homepage": "https://github.com/t0mgithub/construct-url#readme",
+  "homepage": "https://github.com/TomPrograms/construct-url#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.2.2",

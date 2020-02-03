@@ -68,4 +68,4 @@ If the protocol attribute is equal to "https" or "http", the constructed URL wil
 
 ## Author
 
-[T0MGithub](https://github.com/t0mgithub)
+[TomPrograms](https://github.com/TomPrograms)
