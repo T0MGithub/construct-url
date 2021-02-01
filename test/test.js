@@ -19,12 +19,24 @@ describe("construct-url", function() {
     ).to.equal("example.com");
   });
 
+  it("query parameters should be able to be numbers", function() {
+    expect(
+      constructUrl("https://example.com", {
+        path: "/TEST",
+        queryParams: {
+          option: 1
+        },
+        lowercase: true
+      })
+    ).to.equal("https://example.com/test?option=1");
+  });
+
   it("query parameters and path should be converted to lowercase", function() {
     expect(
       constructUrl("https://example.com", {
         path: "/TEST",
         queryParams: {
-          option: "test",
+          option: " test ",
           OPTION_TWO: "test_two"
         },
         lowercase: true

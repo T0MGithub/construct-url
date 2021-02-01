@@ -97,9 +97,11 @@ module.exports = function(baseUrl, options) {
         let currentQuery = allKeys[i];
         let currentValue = queryOptions[currentQuery];
         if (currentValue !== undefined) {
-          let encodedParameter = encodeURIComponent(
-            String(currentValue.trim())
-          );
+          if (typeof currentValue === "string")
+            currentValue = currentValue.trim();
+          else currentValue = String(currentValue);
+
+          let encodedParameter = encodeURIComponent(currentValue);
           if (convertToLowercase) {
             encodedParameter = encodedParameter.toLowerCase();
             currentQuery = currentQuery.trim().toLowerCase();
